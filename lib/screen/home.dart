@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neucentrix_web/conts.dart';
 import 'package:neucentrix_web/dropdown.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:neucentrix_web/screen/login.dart';
 import '../botton.dart';
 import '../responsive.dart';
 
@@ -123,11 +124,11 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Botton_tombol(title: "Jelajahi layanan"),
+                            Botton_tombol(title: "Jelajahi layanan",arah: login(),),
                             SizedBox(
                               width: screenSize.width * 0.03,
                             ),
-                            botton_tombol2(title: "Lihat fasilitas")
+                            botton_tombol2(title: "Lihat fasilitas",arah: login(),)
                           ],
                         ),
                       ],
@@ -269,11 +270,11 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 width: 50,
               ),
-              Botton_tombol(title: "Connect with us",),
+              Botton_tombol(title: "Connect with us",arah: login(),),
               SizedBox(
                 width: 20,
               ),
-              botton_tombol2(title: "Login Dashboard",),
+              botton_tombol2(title: "Login Dashboard",arah: login(),),
               SizedBox(
                 width: 50,
               ),
